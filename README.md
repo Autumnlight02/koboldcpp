@@ -1,4 +1,4 @@
-# {{project-name}} - Readme
+# koboldcpp - Readme
 
 ## Contributing & Development
 

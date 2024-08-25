@@ -1,7 +1,7 @@
 {
-	"name": "{{project-name}}",
+	"name": "koboldcpp",
 	"version": "1.0.0",
-	"description": "{{project-name}}",
+	"description": "koboldcpp",
 	"private": "true",
 	"typescript-template": {
 		"base": "1.0.1",
@@ -41,13 +41,13 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/{{project-org}}/{{project-name}}.git"
+		"url": "git+https://github.com/koboldcpp/koboldcpp.git"
 	},
-	"author": "{{project-org}}",
+	"author": "koboldcpp",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/{{project-org}}/{{project-name}}/issues"
+		"url": "https://github.com/koboldcpp/koboldcpp/issues"
 	},
-	"homepage": "https://github.com/{{project-org}}/{{project-name}}#readme",
+	"homepage": "https://github.com/koboldcpp/koboldcpp#readme",
 	"keywords": []
 }

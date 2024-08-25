@@ -1,7 +1,7 @@
 import 'jasmine';
 import * as index from '../../src';
 
-describe('{{project-name}}', () => {
+describe('koboldcpp', () => {
 	it('exports a', () => {
 		expect(index.a).toBeTrue();
 	});

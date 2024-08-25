@@ -1,1 +1,1 @@
-# {{project-name}} - Changelog
+# koboldcpp - Changelog
