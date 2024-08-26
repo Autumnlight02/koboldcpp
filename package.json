@@ -1,6 +1,6 @@
 {
 	"name": "koboldcpp",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "A Wrapper Library for Koboldcpp",
 	"typescript-template": {
 		"base": "1.0.1",
@@ -18,25 +18,18 @@
 		"lint": "eslint .",
 		"lint:prod": "npm run lint -- --config=.eslintrc.prod.json",
 		"script": "ts-node scripts",
-		"publish": "npm run script -- publish",
+		"publish": "npm run script -- prep && cd ./dist/src && npm publish",
 		"generate:spec": "ts-node ./src/generated/generateDefs.ts"
 	},
 	"devDependencies": {
 		"@istanbuljs/nyc-config-typescript": "^1.0.2",
-		"@types/eventsource": "^1.1.15",
 		"@types/jasmine": "^5.1.4",
 		"@types/node": "^18.19.39",
-		"@types/stream-chain": "^2.1.0",
-		"@types/stream-json": "^1.7.7",
 		"@types/uuid": "^10.0.0",
 		"@typescript-eslint/eslint-plugin": "^7.13.1",
-		"dotenv": "^16.4.5",
 		"eslint": "^8.57.0",
-		"eventsource": "^2.0.2",
 		"jasmine": "^5.1.0",
 		"nyc": "^17.0.0",
-		"openapi-fetch": "^0.11.1",
-		"openapi-typescript": "^7.3.0",
 		"prettier": "^3.3.2",
 		"prettier-eslint": "^16.3.0",
 		"prettier-eslint-cli": "^8.0.1",
@@ -59,6 +52,9 @@
 	"homepage": "https://github.com/Autumnlight02/koboldcpp#readme",
 	"keywords": [],
 	"dependencies": {
-		"uuid": "^10.0.0"
+		"uuid": "^10.0.0",
+		"openapi-fetch": "^0.11.1",
+		"openapi-typescript": "^7.3.0",
+		"dotenv": "^16.4.5"
 	}
 }
