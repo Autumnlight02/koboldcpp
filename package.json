@@ -50,14 +50,14 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/koboldcpp/koboldcpp.git"
+		"url": "git+https://github.com/Autumnlight02/koboldcpp.git"
 	},
 	"author": "koboldcpp",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/koboldcpp/koboldcpp/issues"
+		"url": "https://github.com/Autumnlight02/koboldcpp/issues"
 	},
-	"homepage": "https://github.com/koboldcpp/koboldcpp#readme",
+	"homepage": "https://github.com/Autumnlight02/koboldcpp#readme",
 	"keywords": [],
 	"dependencies": {
 		"uuid": "^10.0.0"
