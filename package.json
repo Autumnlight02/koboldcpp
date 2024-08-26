@@ -29,6 +29,7 @@
 		"@types/node": "^18.19.39",
 		"@types/stream-chain": "^2.1.0",
 		"@types/stream-json": "^1.7.7",
+		"@types/uuid": "^10.0.0",
 		"@typescript-eslint/eslint-plugin": "^7.13.1",
 		"dotenv": "^16.4.5",
 		"eslint": "^8.57.0",
@@ -59,7 +60,6 @@
 	"homepage": "https://github.com/koboldcpp/koboldcpp#readme",
 	"keywords": [],
 	"dependencies": {
-		"stream-chain": "^3.1.0",
-		"stream-json": "^1.8.0"
+		"uuid": "^10.0.0"
 	}
 }
