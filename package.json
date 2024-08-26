@@ -52,9 +52,10 @@
 	"homepage": "https://github.com/Autumnlight02/koboldcpp#readme",
 	"keywords": [],
 	"dependencies": {
-		"uuid": "^10.0.0",
+		"badge-maker": "^4.0.0",
+		"dotenv": "^16.4.5",
 		"openapi-fetch": "^0.11.1",
 		"openapi-typescript": "^7.3.0",
-		"dotenv": "^16.4.5"
+		"uuid": "^10.0.0"
 	}
 }
