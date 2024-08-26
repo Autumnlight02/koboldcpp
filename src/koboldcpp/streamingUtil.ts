@@ -8,11 +8,11 @@ export async function processGenerateStream(
 ) {
 	const reader = stream.getReader();
 
-	let chunks: Uint8Array[] = [];
+	const chunks: Uint8Array[] = [];
 	let previousLeft: Uint8Array | undefined;
 	while (true) {
 		const { done, value: valueBuffer } = (await reader.read()) as {
-			done: Boolean;
+			done: boolean;
 			value: Uint8Array;
 		};
 		if (done) {
@@ -54,7 +54,8 @@ export async function processGenerateStream(
 						chunks.push(newIntArr);
 						previousLeft = undefined;
 						chunkStart = i;
-					} else {
+					}
+					else {
 						if (debug) {
 							console.log('>>>>>>> FOUND <<<<<<<<<<');
 							console.log(

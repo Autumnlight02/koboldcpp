@@ -4,7 +4,7 @@
  */
 
 export interface paths {
-    "/api/v1/config/max_context_length": {
+    '/api/v1/config/max_context_length': {
         parameters: {
             query?: never;
             header?: never;
@@ -27,7 +27,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["MaxContextLengthSetting"];
+                        'application/json': components['schemas']['MaxContextLengthSetting'];
                     };
                 };
             };
@@ -40,7 +40,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/v1/config/max_length": {
+    '/api/v1/config/max_length': {
         parameters: {
             query?: never;
             header?: never;
@@ -63,7 +63,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["MaxLengthSetting"];
+                        'application/json': components['schemas']['MaxLengthSetting'];
                     };
                 };
             };
@@ -76,7 +76,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/v1/generate": {
+    '/api/v1/generate': {
         parameters: {
             query?: never;
             header?: never;
@@ -115,7 +115,7 @@ export interface paths {
                      *       "top_p": 0.9,
                      *       "typical": 1
                      *     } */
-                    "application/json": components["schemas"]["GenerationInput"];
+                    'application/json': components['schemas']['GenerationInput'];
                 };
             };
             responses: {
@@ -125,7 +125,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["GenerationOutput"];
+                        'application/json': components['schemas']['GenerationOutput'];
                     };
                 };
                 /** @description Server is busy */
@@ -134,7 +134,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["ServerBusyError"];
+                        'application/json': components['schemas']['ServerBusyError'];
                     };
                 };
             };
@@ -145,7 +145,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/v1/info/version": {
+    '/api/v1/info/version': {
         parameters: {
             query?: never;
             header?: never;
@@ -171,7 +171,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["BasicResult"];
+                        'application/json': components['schemas']['BasicResult'];
                     };
                 };
             };
@@ -184,7 +184,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/v1/model": {
+    '/api/v1/model': {
         parameters: {
             query?: never;
             header?: never;
@@ -210,7 +210,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["BasicResult"];
+                        'application/json': components['schemas']['BasicResult'];
                     };
                 };
             };
@@ -223,7 +223,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/extra/true_max_context_length": {
+    '/api/extra/true_max_context_length': {
         parameters: {
             query?: never;
             header?: never;
@@ -249,7 +249,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["MaxContextLengthSetting"];
+                        'application/json': components['schemas']['MaxContextLengthSetting'];
                     };
                 };
             };
@@ -262,7 +262,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/extra/version": {
+    '/api/extra/version': {
         parameters: {
             query?: never;
             header?: never;
@@ -288,7 +288,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["KcppVersion"];
+                        'application/json': components['schemas']['KcppVersion'];
                     };
                 };
             };
@@ -301,7 +301,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/extra/preloadstory": {
+    '/api/extra/preloadstory': {
         parameters: {
             query?: never;
             header?: never;
@@ -327,7 +327,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": unknown;
+                        'application/json': unknown;
                     };
                 };
             };
@@ -340,7 +340,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/extra/perf": {
+    '/api/extra/perf': {
         parameters: {
             query?: never;
             header?: never;
@@ -366,7 +366,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["KcppPerf"];
+                        'application/json': components['schemas']['KcppPerf'];
                     };
                 };
             };
@@ -379,7 +379,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/extra/generate/stream": {
+    '/api/extra/generate/stream': {
         parameters: {
             query?: never;
             header?: never;
@@ -416,7 +416,7 @@ export interface paths {
                      *       "temperature": 0.5,
                      *       "top_p": 0.9
                      *     } */
-                    "application/json": components["schemas"]["GenerationInput"];
+                    'application/json': components['schemas']['GenerationInput'];
                 };
             };
             responses: {
@@ -426,7 +426,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["GenerationOutput"];
+                        'application/json': components['schemas']['GenerationOutput'];
                     };
                 };
                 /** @description Server is busy */
@@ -435,7 +435,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["ServerBusyError"];
+                        'application/json': components['schemas']['ServerBusyError'];
                     };
                 };
             };
@@ -446,7 +446,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/extra/generate/check": {
+    '/api/extra/generate/check': {
         parameters: {
             query?: never;
             header?: never;
@@ -472,7 +472,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["GenerationOutput"];
+                        'application/json': components['schemas']['GenerationOutput'];
                     };
                 };
             };
@@ -494,7 +494,7 @@ export interface paths {
                     /** @example {
                      *       "genkey": "KCPP2342"
                      *     } */
-                    "application/json": {
+                    'application/json': {
                         /** @description A unique key used to identify this generation while it is in progress. */
                         genkey?: string;
                     };
@@ -507,7 +507,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["GenerationOutput"];
+                        'application/json': components['schemas']['GenerationOutput'];
                     };
                 };
             };
@@ -518,7 +518,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/extra/tokencount": {
+    '/api/extra/tokencount': {
         parameters: {
             query?: never;
             header?: never;
@@ -543,7 +543,7 @@ export interface paths {
                     /** @example {
                      *       "prompt": "Hello, my name is Niko."
                      *     } */
-                    "application/json": {
+                    'application/json': {
                         /** @description The string to be tokenized. */
                         prompt?: string;
                     };
@@ -556,7 +556,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["ValueResult"];
+                        'application/json': components['schemas']['ValueResult'];
                     };
                 };
             };
@@ -567,7 +567,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/extra/abort": {
+    '/api/extra/abort': {
         parameters: {
             query?: never;
             header?: never;
@@ -592,7 +592,7 @@ export interface paths {
                     /** @example {
                      *       "genkey": "KCPP2342"
                      *     } */
-                    "application/json": {
+                    'application/json': {
                         /** @description A unique key used to identify this generation while it is in progress. */
                         genkey?: string;
                     };
@@ -605,7 +605,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": {
+                        'application/json': {
                             /** @description Whether the abort was successful. */
                             success?: boolean;
                         };
@@ -619,7 +619,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/api/extra/transcribe": {
+    '/api/extra/transcribe': {
         parameters: {
             query?: never;
             header?: never;
@@ -645,7 +645,7 @@ export interface paths {
                      *       "prompt": "",
                      *       "audio_data": "base64_wav_data"
                      *     } */
-                    "application/json": {
+                    'application/json': {
                         /** @description Base64 respresentation of a 16-bit 16kHz wave file to be transcribed to text. */
                         audio_data?: string;
                     };
@@ -658,7 +658,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": components["schemas"]["ValueResult"];
+                        'application/json': components['schemas']['ValueResult'];
                     };
                 };
             };
@@ -669,7 +669,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/sdapi/v1/sd-models": {
+    '/sdapi/v1/sd-models': {
         parameters: {
             query?: never;
             header?: never;
@@ -695,7 +695,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": unknown;
+                        'application/json': unknown;
                     };
                 };
             };
@@ -708,7 +708,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/sdapi/v1/options": {
+    '/sdapi/v1/options': {
         parameters: {
             query?: never;
             header?: never;
@@ -734,7 +734,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": unknown;
+                        'application/json': unknown;
                     };
                 };
             };
@@ -747,7 +747,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/sdapi/v1/samplers": {
+    '/sdapi/v1/samplers': {
         parameters: {
             query?: never;
             header?: never;
@@ -773,7 +773,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": unknown;
+                        'application/json': unknown;
                     };
                 };
             };
@@ -786,7 +786,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/sdapi/v1/txt2img": {
+    '/sdapi/v1/txt2img': {
         parameters: {
             query?: never;
             header?: never;
@@ -818,7 +818,7 @@ export interface paths {
                      *       "seed": -1,
                      *       "sampler_name": "Euler a"
                      *     } */
-                    "application/json": {
+                    'application/json': {
                         prompt?: string;
                         negative_prompt?: string;
                         cfg_scale?: number;
@@ -837,7 +837,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": {
+                        'application/json': {
                             /** @description A base64 string containing the encoded PNG of the generated image. */
                             images?: string;
                             /** @description Not used. Will be empty. */
@@ -855,7 +855,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/sdapi/v1/img2img": {
+    '/sdapi/v1/img2img': {
         parameters: {
             query?: never;
             header?: never;
@@ -891,7 +891,7 @@ export interface paths {
                      *         "base64_image_data"
                      *       ]
                      *     } */
-                    "application/json": {
+                    'application/json': {
                         prompt?: string;
                         negative_prompt?: string;
                         cfg_scale?: number;
@@ -912,7 +912,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": {
+                        'application/json': {
                             /** @description A base64 string containing the encoded PNG of the generated image. */
                             images?: string;
                             /** @description Not used. Will be empty. */
@@ -930,7 +930,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/sdapi/v1/interrogate": {
+    '/sdapi/v1/interrogate': {
         parameters: {
             query?: never;
             header?: never;
@@ -956,7 +956,7 @@ export interface paths {
                      *       "image": "base64_image_data",
                      *       "model": "clip"
                      *     } */
-                    "application/json": {
+                    'application/json': {
                         /** @description A base64 string containing the encoded PNG of the image. */
                         image?: string;
                         /** @description Not used. */
@@ -971,7 +971,7 @@ export interface paths {
                         [name: string]: unknown;
                     };
                     content: {
-                        "application/json": {
+                        'application/json': {
                             /** @description A short text description of the image. */
                             caption?: string;
                         };
@@ -985,7 +985,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/v1/completions": {
+    '/v1/completions': {
         parameters: {
             query?: never;
             header?: never;
@@ -1018,7 +1018,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/v1/chat/completions": {
+    '/v1/chat/completions': {
         parameters: {
             query?: never;
             header?: never;
@@ -1051,7 +1051,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/v1/models": {
+    '/v1/models': {
         parameters: {
             query?: never;
             header?: never;
@@ -1084,7 +1084,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/v1/audio/transcriptions": {
+    '/v1/audio/transcriptions': {
         parameters: {
             query?: never;
             header?: never;
@@ -1126,7 +1126,7 @@ export interface components {
             type: string;
         };
         BasicResult: {
-            result: components["schemas"]["BasicResultInner"];
+            result: components['schemas']['BasicResultInner'];
         };
         BasicResultInner: {
             result: string;
@@ -1239,7 +1239,7 @@ export interface components {
         };
         GenerationOutput: {
             /** @description Array of generated outputs. */
-            results: components["schemas"]["GenerationResult"][];
+            results: components['schemas']['GenerationResult'][];
         };
         GenerationResult: {
             /** @description Generated output as plain text. */
@@ -1252,7 +1252,7 @@ export interface components {
             value: number;
         };
         ServerBusyError: {
-            detail: components["schemas"]["BasicError"];
+            detail: components['schemas']['BasicError'];
         };
         ValueResult: {
             value: number;

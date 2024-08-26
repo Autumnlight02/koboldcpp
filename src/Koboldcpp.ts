@@ -65,7 +65,7 @@ export default class KoboldCpp {
 		},
 		callback: ChunkStreamResponseCallback
 	) {
-		let cb =
+		const cb =
 			callback ??
 			function (data) {
 				console.log(data);

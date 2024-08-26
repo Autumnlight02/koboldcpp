@@ -2,12 +2,13 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 export function getKoboldEndpointUrl(): URL {
-	let rawUrl = process.env['KOBOLD_ENDPOINT']! ?? '';
+	const rawUrl = process.env['KOBOLD_ENDPOINT']! ?? '';
 
 	let url: URL;
 	try {
 		url = new URL(rawUrl!);
-	} catch (error) {
+	}
+	catch (error) {
 		console.log('--- ERROR ---');
 		if ((error as any)?.code === 'ERR_INVALID_URL') {
 			console.log(

@@ -21,7 +21,7 @@ export class MessageClient {
 	#baseConfig: GenerationConfig;
 
 	koboldCppInstance: KoboldCpp;
-	generate(prompt: string, config: Partial<GenerationConfig> = {}) {
+	async generate(prompt: string, config: Partial<GenerationConfig> = {}) {
 		const reqObj = {
 			body: {
 				...this.#baseConfig,
@@ -32,7 +32,7 @@ export class MessageClient {
 		};
 		return this.koboldCppInstance.generate(reqObj);
 	}
-	stream(
+	async stream(
 		prompt: string,
 		callback: ChunkStreamResponseCallback,
 		config: Partial<GenerationConfig> = {}
@@ -47,12 +47,12 @@ export class MessageClient {
 		};
 		return this.koboldCppInstance.generateStream(reqObj, callback);
 	}
-	check() {
+	async check() {
 		return this.koboldCppInstance.generateCheck({
 			genkey: this.#genkey,
 		});
 	}
-	abort() {
+	async abort() {
 		return this.koboldCppInstance.generateAbort({
 			genkey: this.#genkey,
 		});

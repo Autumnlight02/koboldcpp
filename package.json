@@ -1,6 +1,6 @@
 {
 	"name": "koboldcpp",
-	"version": "0.0.1",
+	"version": "0.0.3",
 	"description": "A Wrapper Library for Koboldcpp",
 	"typescript-template": {
 		"base": "1.0.1",
@@ -51,7 +51,7 @@
 		"type": "git",
 		"url": "git+https://github.com/Autumnlight02/koboldcpp.git"
 	},
-	"author": "koboldcpp",
+	"author": "Aykut Akgün",
 	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/Autumnlight02/koboldcpp/issues"

@@ -6,13 +6,13 @@ console.log('--- Generating Type Definition ---');
 
 const url = getKoboldEndpointUrl();
 
-fetchVersion().then(() => {
-	fetchDefinition();
-	createSpecFile();
+fetchVersion().then(async () => {
+	await fetchDefinition();
+	await createSpecFile();
 });
 
 async function fetchVersion() {
-	const version = await fetch(`${url.href}v1/info/version`).then((e) =>
+	const version = await fetch(`${url.href}v1/info/version`).then(async (e) =>
 		e.json()
 	);
 	console.log(
@@ -24,7 +24,9 @@ async function fetchDefinition() {
 	console.log(
 		'--- Warning, cannot fetch at the moment definition due to Kobold Bug, please visit url manually and copy the json in ---'
 	);
-	let definition = await fetch(`${url.href}?json=1`).then((e) => e.text());
+	const definition = await fetch(`${url.href}?json=1`).then(async (e) =>
+		e.text()
+	);
 	console.log(definition);
 	return true;
 

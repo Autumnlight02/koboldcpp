@@ -1,5 +1,5 @@
-import 'jasmine';
-import * as index from '../../src';
+// import 'jasmine';
+// import * as index from '../../src';
 
 // describe('koboldcpp', () => {
 // 	it('exports a', () => {
