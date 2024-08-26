@@ -1,6 +1,6 @@
 {
 	"name": "koboldcpp",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"description": "A Wrapper Library for Koboldcpp",
 	"typescript-template": {
 		"base": "1.0.1",
